@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# course_file
+course_files
+
+# Optional npm cache directory
+.npm

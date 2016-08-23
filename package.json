@@ -1,0 +1,26 @@
+{
+  "name": "Enook_search_course",
+  "version": "1.0.0",
+  "description": "demo",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s2cLab/Enook_search_course.git"
+  },
+  "license": "ISC",
+  "author": "Sangwoo Yeom duatkddn@naver.com",
+  "dependencies": {
+    "body-parser": "~1.8.1",
+    "express": "~4.9.0",
+    "async": "^2.0.1",
+    "debug": "~2.0.0",
+    "elasticsearch": "^10.1.2",
+    "express": "^4.13.3",
+    "file-stream-rotator": "0.0.6",
+    "morgan": "^1.6.1",
+    "underscore": "^1.8.3",
+    "uglify-js": "^2.7.0"
+  }
+}
