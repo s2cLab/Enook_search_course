@@ -54,6 +54,7 @@ async.series([
       }
     },function(err){
       if(err){
+        console.log(err);
         callback(err);
       }else{
         // mapping
