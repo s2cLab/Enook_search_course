@@ -15,8 +15,11 @@
         <li><a href="/#">page</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right"></ul>
-      <form class="navbar-form navbar-right">
-        <input type="text" placeholder="Search..." class="form-control">
+      <form class="navbar-form navbar-right" ng-submit="submit()" >
+        <input type="text" ng-model="searchQuery" name="text" placeholder="Search..." class="form-control">
+        <button type="submit" id="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
       </form>
     </div>
     <!-- /.nav-collapse-->

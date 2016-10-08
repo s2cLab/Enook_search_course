@@ -2,6 +2,9 @@
   "setting":{
     "analysis": {
       "tokenizer": {
+         "seunjeon_default_tokenizer": {
+          "type": "seunjeon_tokenizer"
+        },
         "whitespace_tokenizer": {
           "type": "whitespace"
         }
@@ -42,13 +45,13 @@
         },
         "search_analyzer": {
           "type":      "custom",
-          "tokenizer": "whitespace_tokenizer",
+          "tokenizer": "seunjeon_default_tokenizer",
           "filter":    ["lowercase", "asciifolding"]
         },
         "course_analyzer" : {
           "filter" : ["shingle_filter", "standard", "lowercase", "asciifolding"],
           "char_filter" : ["html_strip"],
-          "tokenizer" : "standard"
+          "tokenizer" : "seunjeon_default_tokenizer"
         }
       }
     }
